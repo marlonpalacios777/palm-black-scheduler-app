@@ -52,6 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Colores específicos de Palm Black Barbería
+				barbershop: {
+					black: 'hsl(var(--barbershop-black))',
+					gold: 'hsl(var(--barbershop-gold))',
+					'gold-light': 'hsl(var(--barbershop-gold-light))',
+					cream: 'hsl(var(--barbershop-cream))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +91,55 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				// Animaciones cinematográficas para Palm Black
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-in-left': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(-100px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateX(0)'
+					}
+				},
+				'zoom-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.8)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
+				},
+				'typewriter': {
+					'0%': { width: '0' },
+					'100%': { width: '100%' }
+				},
+				'gold-shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fade-in-up 0.6s ease-out',
+				'slide-in-left': 'slide-in-left 0.8s ease-out',
+				'zoom-in': 'zoom-in 0.5s ease-out',
+				'typewriter': 'typewriter 2s steps(40) 1s forwards',
+				'gold-shimmer': 'gold-shimmer 2s ease-in-out infinite'
 			}
 		}
 	},
